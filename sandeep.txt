@@ -1,0 +1,169 @@
+class Evil 
+{
+  public static void main(String[] args) 
+  {
+     int n=9,rem,i,sum=0;
+     int x;
+     x=(int)Math.pow(9,2);
+     System.out.println(x);
+     i=n;
+     rem=0;
+     while(x!=0)
+     {
+       rem=x%10;
+       sum=sum+rem;
+       System.out.println(rem);
+       
+     x=x/10;
+     }
+     if(i==sum)
+     System.out.println("EVIL NUMBER");
+  }
+}
+------------
+class PowNum
+{
+  public static void main(String[] args) 
+  {
+    int n=132,rem=0;
+    while(n!=0)
+    { 
+      rem=n%10;
+      n=n/10;
+      System.out.println(rem);
+    }
+    int sum=0;
+    int product=1;
+    while(rem!=0)
+    {
+     sum=sum+n;
+     product=product*n;
+     rem++;
+    }
+    if(sum==product)
+      System.out.println("Power Number");  
+  }
+}
+----------
+class Auto
+{
+  public static void main(String[] args)
+  {
+    int n=23,rem=0;
+    int x;
+    x=(int)Math.pow(n,2);
+    System.out.println(x);
+    rem=x%100;
+    System.out.println(rem);
+    if(rem==n)
+    System.out.println("Automatic Number");
+    else
+    System.out.println("Not a Automatic Num");
+  }
+}
+----------
+class Tech
+{
+  public static void main(String[] args)
+  {
+    int n=2025,rev=0,rem=0,sum=0,x;
+    System.out.println(n);
+    rem=n%100;
+    rev=n/100;
+    System.out.println(rem+" "+rev);
+    sum=rem+rev;
+    System.out.println(sum);
+    x=(int)Math.pow(sum,2);
+    System.out.println(x);
+    if(n==x)
+    System.out.println("Tech Num");
+    else
+    System.out.println("Not a Tech Num");
+
+  }
+}
+-----------
+class Busy
+{
+ public static void main(String args[])
+ { 
+  int n=47,rem=0,rev=0;
+  rem=n%10;
+  System.out.println(rem);
+  if(7==rem)
+  System.out.println("The Number is Busy");
+  rev=n%7;
+  if(rev==0)
+  System.out.println("The number is Busy");
+  else
+  System.out.println("The Number is Not Busy");
+ }
+}
+----------
+class Prime1
+{
+ public static void main(String args[])
+ {
+  int n=3,count=0;
+  if(n%2==0)
+  count++;
+  if(count==0)
+  System.out.println("Prime");
+  else
+  System.out.println("Not a Prime");
+ }
+}
+----------
+class Prime2
+{
+ public static void main(String args[])
+ {
+  int n;
+  for(n=111;n<=511;n++)
+  {
+    int count=0;
+    int i=2;
+    int k=n;
+    while(i!=0)
+    {
+      if(k%i==0)
+      count++;
+    i++;
+    }
+   if(count==0)
+   System.out.print(i+" ");
+  }
+ }
+}
+----------
+class Leap1
+{
+ public static void main(String args[])
+ {
+  int n=1900;
+  if(n%4==0&&n%100!=0)
+  System.out.println("Leap Year");
+  else if(n%400==0)
+  System.out.println("Leap Year");
+  else
+  System.out.println("Not a Leap Year");
+ }
+}
+---------
+class fib
+{
+ public static void main(String args[])
+ {
+  int n=0,f=0,s=1,t;
+  System.out.print(f+" "+s);
+  while(n<=8)
+  {
+   t=f+s;
+   f=t;
+   s=f;
+   System.out.print(" "+t+" ");
+  n++;
+  }
+ }
+}
+---------
